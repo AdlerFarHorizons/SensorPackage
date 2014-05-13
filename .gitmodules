@@ -1,0 +1,3 @@
+[submodule "software/SensorLogger"]
+	path = software/SensorLogger
+	url = https://github.com/AdlerFarHorizons/SensorLogger.git
