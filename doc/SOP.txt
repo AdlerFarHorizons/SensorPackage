@@ -1,0 +1,13 @@
+Day before launch:
+
+Charge the LiPo Battery:
+
+Power switch should be off. Disconnect the battery connector and connect it to a SparkFun LiPo USB Charger with mini-USB cable connected to 5V Wall Supply (a PC USB connection won't cut it). The light will go out when charged. Re-connect the batter to the board connector
+
+Check the SD Card:
+
+Remove the microSD card and using an Adapter check if enough space is left for the flight data. The logger will produce about 0.36GB of data per hour. Archive files if necessary to the data/OpenLogs/ subfolder of the SensorPackage project folder.
+
+
+
+
