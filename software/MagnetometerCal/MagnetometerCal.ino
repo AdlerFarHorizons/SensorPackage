@@ -125,6 +125,8 @@ void loop()
       PRINT( minX );
       PRINT( " Max " );
       PRINT( maxX );
+      PRINT( " Range " );
+      PRINT( maxX - minX );
       PRINT( " Offset " );
       PRINT( ( maxX + minX ) / -2 );
 
@@ -132,6 +134,8 @@ void loop()
       PRINT( minY );
       PRINT( " Max " );
       PRINT( maxY );
+      PRINT( " Range " );
+      PRINT( maxY - minY );
       PRINT( " Offset " );
       PRINT( ( maxY + minY ) / -2 );      
 
@@ -139,6 +143,8 @@ void loop()
       PRINT( minZ );
       PRINT( " Max " );
       PRINT( maxZ );
+      PRINT( " Range " );
+      PRINT( maxZ - minZ );
       PRINT( " Offset " );
       PRINTLN( ( maxZ + minZ ) / -2 );     
     }     
