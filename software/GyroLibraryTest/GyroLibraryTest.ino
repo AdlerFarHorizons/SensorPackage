@@ -1,7 +1,7 @@
 #include <Wire.h>
-#include <L3G4200D.h>
+#include <L3G4200D_I2C.h>
 
-L3G4200D gyro(false); // Assume SDO pin is LOW
+L3G4200D_I2C gyro(false); // Assume SDO pin is LOW
 uint8_t error;
 
 void setup() {
@@ -22,8 +22,8 @@ void setup() {
 }
 
 void loop() {
-  GyroRaw gyroraw = gyro.ReadRawAxis();
-  GyroScaled gyroscaled = gyro.Raw2Scaled(gyroraw);
+  L3G4200D_I2C_GyroRaw gyroraw = gyro.ReadRawAxis();
+  L3G4200D_I2C_GyroScaled gyroscaled = gyro.Raw2Scaled(gyroraw);
   
   Serial.print( gyroraw.XRate );
   Serial.print( "," );  

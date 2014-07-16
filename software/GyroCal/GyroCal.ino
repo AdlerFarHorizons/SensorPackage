@@ -1,5 +1,5 @@
 #include <Wire.h>
-#include <L3G4200D.h>
+#include <L3G4200D_I2C.h>
 
 #if defined (CORE_TEENSY)
 // Teensy uses Serial2 for data logger
@@ -19,7 +19,7 @@
 
 #endif
 
-L3G4200D gyro(false); // Assume SDO pin is LOW
+L3G4200D_I2C gyro(false); // Assume SDO pin is LOW
 uint8_t error;
 int rate;
 
@@ -61,7 +61,7 @@ void loop() {
   PRINT( rate );
   PRINTLN( " dps." );
   while (i++ < 100) {
-    GyroScaled gyroscaled = gyro.ReadScaledAxis();
+    L3G4200D_I2C_GyroScaled gyroscaled = gyro.ReadScaledAxis();
     X += gyroscaled.XRate;
     Y += gyroscaled.YRate;    
     Z += gyroscaled.ZRate; 
